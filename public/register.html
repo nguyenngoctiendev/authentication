@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Đăng ký thành viên</title>
+</head>
+
+<body>
+    <div id="createacount">
+        <h3>Tạo tài khoản</h3>
+    </div>
+    <form id="form" method="post" action="/register">
+        <table>
+            <tr>
+                <th>Họ và tên</th>
+                <td><input type="text" id="username" name="username" /></td>
+            </tr>
+            <tr>
+                <th>Địa chỉ email</th>
+                <td><input type="email" id="email" name="email" /></td>
+            </tr>
+            <tr>
+                <th>Mật khẩu</th>
+                <td><input type="password" id="password" name="password" /></td>
+            </tr>
+            <tr>
+                <th>Nhập lại mật khẩu</th>
+                <td><input type="password" id="confirmpassword" name="confirmpassword" /></td>
+            </tr>
+            <tr>
+                <th>Giới tính</th>
+                <td>
+                    <select id="gender" name="gender">
+                        <option value="male">Nam</option>
+                        <option value="female">Nữ</option>
+                    </select>
+                </td>
+            </tr>
+        </table>
+    </form>
+    <button onclick="createUser()">Đăng ký</button>
+    <script src="js/register.js"></script>
+</body>
+
+</html>
